@@ -4,7 +4,7 @@ namespace AMGPortal\Plugins;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 
-class Vanguard
+class AMGPortal
 {
     /**
      * All of the registered Vanguard plugins.

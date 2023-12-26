@@ -1,5 +1,5 @@
 {
-    "name": "amgportal/plugins",
+    "name": "amgportalapp/plugins",
     "description": "Core stuff for Vanguard plugin support.",
     "type": "library",
     "license": "MIT",

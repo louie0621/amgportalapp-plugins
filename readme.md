@@ -5,7 +5,7 @@ Core classes for [AMGPortal](https://portal.alchemymedia.io/) plugin support.
 To install the package just run the following command:
 
 ```
-composer require amgportal/plugins
+composer require amgportalapp/plugins
 ```
 
 ## License

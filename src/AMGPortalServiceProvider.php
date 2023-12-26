@@ -4,7 +4,7 @@ namespace AMGPortal\Plugins;
 
 use Illuminate\Support\ServiceProvider;
 
-abstract class VanguardServiceProvider extends ServiceProvider
+abstract class AMGPortalServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -19,7 +19,7 @@ abstract class VanguardServiceProvider extends ServiceProvider
             $instances[$plugin] = $this->app->register($plugin);
         }
 
-        Vanguard::plugins($instances);
+        AMGPortal::plugins($instances);
     }
 
     /**
@@ -33,7 +33,7 @@ abstract class VanguardServiceProvider extends ServiceProvider
             return $this->app->make($class);
         })->toArray();
 
-        Vanguard::widgets($widgets);
+        AMGPortal::widgets($widgets);
 
         \Blade::directive('hook', function ($name) {
             return "<?php if (\AMGPortal\Plugins\Vanguard::hasHook($name)) { 
