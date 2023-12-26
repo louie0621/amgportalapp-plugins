@@ -1,0 +1,39 @@
+{
+    "name": "amgportal/plugins",
+    "description": "Core stuff for Vanguard plugin support.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milos Stojanovic",
+            "email": "stojanovic.loshmi@gmail.com",
+            "homepage": "https://mstojanovic.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^9.0",
+        "symfony/process": "^6.0",
+        "illuminate/console": "^9.0",
+        "illuminate/filesystem": "^9.0",
+        "illuminate/view": "^9.0",
+        "illuminate/auth": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AMGPortal\\Plugins\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AMGPortal\\Plugins\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AMGPortal\\Plugins\\PluginsServiceProvider"
+            ]
+        }
+    }
+}
