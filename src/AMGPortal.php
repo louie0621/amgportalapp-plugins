@@ -7,35 +7,35 @@ use Illuminate\Contracts\Auth\Authenticatable;
 class AMGPortal
 {
     /**
-     * All of the registered Vanguard plugins.
+     * All of the registered AMGPortal plugins.
      *
      * @var array
      */
     public static $plugins = [];
 
     /**
-     * All of the registered Vanguard dashboard widgets.
+     * All of the registered AMGPortal dashboard widgets.
      *
      * @var array
      */
     public static $widgets = [];
 
     /**
-     * All of the registered Vanguard scripts.
+     * All of the registered AMGPortal scripts.
      *
      * @var array
      */
     public static $scripts = [];
 
     /**
-     * All of the registered Vanguard styles.
+     * All of the registered AMGPortal styles.
      *
      * @var array
      */
     public static $styles = [];
 
     /**
-     * All registered Vanguard view hooks.
+     * All registered AMGPortal view hooks.
      *
      * @var array
      */

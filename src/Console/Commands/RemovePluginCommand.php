@@ -4,7 +4,7 @@ namespace AMGPortal\Plugins\Console\Commands;
 
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
-use AMGPortal\Plugins\Vanguard;
+use AMGPortal\Plugins\AMGPortal;
 
 class RemovePluginCommand extends PluginCommand
 {
@@ -13,7 +13,7 @@ class RemovePluginCommand extends PluginCommand
      *
      * @var string
      */
-    protected $name = 'vanguard:remove-plugin';
+    protected $name = 'amgportal:remove-plugin';
 
     /**
      * The console command description.

@@ -12,7 +12,7 @@ class GeneratePluginCommand extends PluginCommand
      *
      * @var string
      */
-    protected $name = 'vanguard:make-plugin';
+    protected $name = 'amgportal:make-plugin';
 
     /**
      * The console command description.

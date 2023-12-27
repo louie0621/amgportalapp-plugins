@@ -36,8 +36,8 @@ abstract class AMGPortalServiceProvider extends ServiceProvider
         AMGPortal::widgets($widgets);
 
         \Blade::directive('hook', function ($name) {
-            return "<?php if (\AMGPortal\Plugins\Vanguard::hasHook($name)) { 
-                collect(\AMGPortal\Plugins\Vanguard::getHookHandlers($name))
+            return "<?php if (\AMGPortal\Plugins\AMGPortal::hasHook($name)) { 
+                collect(\AMGPortal\Plugins\AMGPortal::getHookHandlers($name))
                     ->each(function (\$hook) {
                         echo resolve(\$hook)->handle();
                     });
